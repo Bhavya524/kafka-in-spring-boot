@@ -1,0 +1,17 @@
+app:
+    name: Kafka Consumer
+server:
+    port: 8082
+spring:
+    mvc:
+        pathmatch:
+            matching-strategy: ant_path_matcher
+    profiles:
+        active: swagger
+    swagger:
+        active: true
+    kafka:
+        producer:
+            bootstrap-servers: localhost:9092
+
+
